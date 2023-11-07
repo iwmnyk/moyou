@@ -1,0 +1,128 @@
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: "zen-maru-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body, header, footer {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #999;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+main { padding-bottom: 10%; }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+#gnav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#gnav li {
+    font-size: smaller;
+    list-style: none;
+    padding-left: 10%;
+}
+#gnav a:hover {
+    color: #ff7171;
+    opacity: .8;
+}
+hgroup{
+    width: fit-content;
+    padding: 10% 0;
+    margin: 0 auto;
+    position: relative;
+}
+div.animation1 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    opacity: .5;
+    top: 28%;
+    left: 25%;
+    border-radius: 45% 45% 50% 45% / 50% 50% 25% 50%;
+}
+#a1 { 
+    z-index: -1;
+    background-color: #ffd485;
+    transform: rotate(0.3turn); 
+ }
+ #a2 { 
+    z-index: -2;
+    background-color: #ffed9c;
+    transform: rotate(0.6turn); 
+ }
+ #a3 { 
+    z-index: -3;
+    background-color: #ffaaaa;
+    transform: rotate(0.9turn); 
+ }
+h1 {
+    color: #ff7171;
+    text-align: center;
+    text-shadow: #fff 0 0 5px;
+}
+#main-message {
+    display: block;
+    width: fit-content;
+    line-height: 2rem;
+    margin: 0 auto 10%;
+}
+#spitoutinputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#spitoutanimatebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    padding-bottom: 8px;
+}
+#spitouttext {
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: smaller;
+    width: 30%;
+    min-width: 300px;
+} 
+#spitout {
+    background-color: #ff7171;
+    color: #fff;
+    font-size: smaller;
+    text-align: center;
+    padding: 3px 3% 1px;
+    border-radius: 4px;
+    vertical-align: baseline;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: #cf4f4f 0 4px 0;
+}
+#spitout:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
