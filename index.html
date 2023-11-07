@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>moyou</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Yuka Iwatsubo">
+        <meta name="discription" content="心の中のもやもやを吐き出して、少し心を軽くするためのサイトです">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'qsv8gsa',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+          </script>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="container">
+                <nav id="gnav">
+                    <ul>
+                        <li><a href="about" title="このサイトについて">このサイトについて</a></li>
+                        <li><a href="share" title="シェアする">シェアする</a></li>
+                        <li><a href="contactus" title="お問い合わせ">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div><!-- end container -->
+        </header>
+
+        <main>
+            <div class="container">
+                <hgroup>
+                    <div class="animation1" id="a1"></div>
+                    <div class="animation1" id="a2"></div>
+                    <div class="animation1" id="a3"></div>
+
+                    <h1>心の中のもやもやを<br>吐き出してみよう</h1>
+                </hgroup>
+                <p id="main-message">
+                    誰にも言えないこと、言っても仕方ないこと、<br>
+                    でも一人で抱え込むのはしんどいこと…<br>
+                    ここに吐き出してすっきりしませんか？<br>
+                    <br>
+                    あなたの心が少しでも軽くなりますように…
+                </p>
+                <div id="spitoutanimatebox">
+ 
+                </div>
+                <div id="spitoutinputs">
+                    <input type="text" id="spitouttext" placeholder="ここに入力してね">
+                    <button type="button" id="spitout">はきだす</button>
+                </div>
+            </div><!-- end container -->
+        </main>
+        <footer>
+                <small>2023-10 moyou制作委員会</s>
+        </footer>
+
+
+
+        <script src="main.js" async></script>
+    </body>
+</html>
